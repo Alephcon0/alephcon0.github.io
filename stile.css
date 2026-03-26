@@ -47,11 +47,9 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   padding: 30px;
-
   font-family: "Merriweather", Georgia, serif;
   font-size: 18px;
   line-height: 1.85;
-
   background-color: var(--bg-page);
   color: var(--text-main);
 }
@@ -117,6 +115,28 @@ header h1 {
   color: var(--text-main);
 }
 
+header h1.logo {
+  text-align: center;
+  font-size: 8rem;
+  letter-spacing: 0;
+  color: var(--text-main);
+  line-height: 1;
+  display: inline-block;
+  position: relative;
+}
+
+.logo-aleph {
+  display: inline-block;
+}
+
+.logo-zero {
+  display: inline-block;
+  font-size: 0.38em;
+  position: relative;
+  left: -0.08em;
+  top: 0.28em;
+}
+
 header h2 {
   text-align: center;
   font-size: 1.8em;
@@ -133,11 +153,9 @@ nav {
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
-
   margin-bottom: 40px;
   padding: 10px;
   border-radius: 8px;
-
   background-color: var(--nav-bg);
 }
 
@@ -214,15 +232,12 @@ nav a:hover {
   left: -280px;
   width: 250px;
   height: 100%;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 22px;
-
   padding-left: 10px;
-
   background: var(--menu-bg);
   transition: left 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
   z-index: 1500;
@@ -304,12 +319,10 @@ footer p {
 blockquote {
   position: relative;
   overflow: visible;
-
   margin: 28px 0;
   padding: 25px 30px;
   border-left: 5px solid var(--accent);
   border-radius: 6px;
-
   background: var(--bg-paper);
   color: var(--text-main);
   font-style: italic;
@@ -323,7 +336,6 @@ blockquote::before {
   top: -10px;
   left: 10px;
   z-index: 0;
-
   font-size: 4em;
   line-height: 1;
   color: rgba(72, 96, 106, 0.12);
@@ -382,12 +394,10 @@ blockquote footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   width: 100%;
   max-width: 320px;
   overflow: hidden;
   border-radius: 12px;
-
   background: var(--bg-paper);
   box-shadow: var(--shadow-soft);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -423,7 +433,6 @@ blockquote footer {
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
-
   padding: 20px 22px 28px;
   text-align: left;
 }
@@ -478,12 +487,10 @@ blockquote footer {
   display: flex;
   flex-direction: column;
   gap: 12px;
-
   margin: 40px 0;
   padding: 25px 20px;
   border: 1px solid var(--border-mid);
   border-radius: 14px;
-
   background: var(--bg-panel);
   box-shadow: var(--shadow-mid);
 }
@@ -493,7 +500,6 @@ blockquote footer {
   flex-wrap: wrap;
   align-items: flex-start;
   gap: 12px;
-
   max-width: 78%;
   margin-bottom: 40px;
 }
@@ -518,7 +524,6 @@ blockquote footer {
   height: 70px;
   flex: 0 0 70px;
   flex-shrink: 0;
-
   border: 2px solid var(--accent);
   border-radius: 50%;
   object-fit: cover;
@@ -551,7 +556,6 @@ blockquote footer {
   font-size: 1em;
   color: var(--text-main);
 }
-
 
 .battuta > p:first-of-type {
   margin-top: 0;
@@ -611,11 +615,9 @@ blockquote footer {
 .dialogo blockquote {
   position: relative;
   overflow: visible;
-
   padding: 16px 20px;
   border-left: 4px solid var(--accent-soft);
   border-radius: 8px;
-
   background: var(--bg-paper-soft);
   color: var(--text-main);
   font-style: italic;
@@ -629,7 +631,6 @@ blockquote footer {
   top: -6px;
   left: 10px;
   z-index: 0;
-
   font-size: 3em;
   color: rgba(72, 96, 106, 0.09);
   pointer-events: none;
@@ -661,10 +662,8 @@ blockquote footer {
   top: 0;
   left: 0;
   z-index: 3000;
-
   width: 0;
   height: 4px;
-
   background: var(--accent);
   box-shadow: 0 0 6px rgba(72, 96, 106, 0.28);
   transition: width 0.25s ease-out;
@@ -678,16 +677,13 @@ blockquote footer {
   display: flex;
   justify-content: center;
   align-items: center;
-
   min-height: 140px;
   height: 140px;
   overflow: hidden;
-
   margin: 25px 0 45px;
   padding: 20px 25px;
   border-left: 4px solid var(--accent);
   border-radius: 6px;
-
   background: var(--bg-paper);
   color: var(--text-main);
   font-style: italic;
@@ -725,6 +721,7 @@ blockquote footer {
   body {
     font-size: 20px;
     line-height: 1.9;
+    padding: 18px;
   }
 
   p {
@@ -741,38 +738,145 @@ blockquote footer {
     margin-bottom: 12px;
   }
 
-  .dialogo {
-    gap: 10px;
-    padding: 20px 16px;
+  header {
+    position: relative;
+    padding-top: 20px;
   }
 
-  .battuta,
-  .battuta.destra {
+  header h1.logo {
+    font-size: 4.2rem;
+  }
+
+  .logo-zero {
+    font-size: 0.42em;
+    left: -0.06em;
+    top: 0.24em;
+  }
+
+  header h2 {
+    font-size: 1.15em;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    padding: 0 20px;
+  }
+
+  .hamburger {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 42px;
+    height: 42px;
+  }
+
+  .hamburger span:nth-child(1) {
+    top: 11px;
+  }
+
+  .hamburger span:nth-child(2) {
+    top: 19px;
+  }
+
+  .hamburger span:nth-child(3) {
+    top: 27px;
+  }
+
+  .menu {
+    width: 220px;
+    left: -240px;
+  }
+
+  .menu a {
+    font-size: 1.15em;
+  }
+
+  .dialogo {
+    gap: 10px;
+    padding: 18px 12px;
+  }
+
+  .battuta {
+    max-width: 100%;
+    margin-bottom: 28px;
+  }
+
+  .battuta.sinistra {
     flex-direction: row;
     align-self: flex-start;
-    max-width: 100%;
+  }
+
+  .battuta.destra {
+    flex-direction: row-reverse;
+    align-self: flex-end;
+  }
+
+  .battuta img {
+    width: 56px;
+    height: 56px;
+    flex: 0 0 56px;
+  }
+
+  .battuta > p,
+  .battuta > blockquote,
+  .battuta > .testo {
+    flex: 1 1 calc(100% - 68px);
   }
 
   .battuta.sinistra > p,
-  .battuta.destra > p {
-    margin: 0 0 10px 82px;
+  .battuta.sinistra > blockquote {
+    margin: 0 0 10px 68px;
     text-align: left;
   }
 
-  .battuta.sinistra > blockquote,
+  .battuta.destra > p,
   .battuta.destra > blockquote {
-    width: calc(100% - 82px);
-    margin: 0 0 10px 82px;
+    margin: 0 68px 10px 0;
+    text-align: left;
   }
 
-  .battuta.sinistra > .testo,
-  .battuta.destra > .testo {
+  .battuta.sinistra > .testo {
     margin-left: 12px;
     margin-right: 0;
+  }
+
+  .battuta.destra > .testo {
+    margin-right: 12px;
+    margin-left: 0;
   }
 
   .battuta.sinistra > .testo p,
   .battuta.destra > .testo p {
     text-align: left;
+  }
+
+  .dialogo blockquote {
+    padding: 14px 16px;
+  }
+
+  .articoli {
+    margin-top: 40px;
+    padding: 0 10px;
+  }
+
+  .articoli-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  .card-content {
+    padding: 18px 18px 24px;
+  }
+
+  .citazione {
+    min-height: auto;
+    height: auto;
+    padding: 18px;
+  }
+
+  .citazione .testo-citazione {
+    max-width: 100%;
   }
 }
