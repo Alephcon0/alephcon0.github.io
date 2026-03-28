@@ -295,6 +295,10 @@ nav.menu {
   transition-delay: 1.05s;
 }
 
+.menu.show a:nth-child(7) {
+  transition-delay: 1.2s;
+}
+
 .menu a:hover {
   color: #ffffff;
   transform: translateX(10px);
